@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>My Online Shop</h1>
+
+        <div class="cart-summary">
+            Cart Items:
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="filters">
+            <h2>Product Categories</h2>
+
+            <button class="filter-button" data-category="all">
+                All
+            </button>
+
+            <button class="filter-button" data-category="beauty">
+                Beauty
+            </button>
+
+            <button class="filter-button" data-category="fragrances">
+                Fragrances
+            </button>
+
+            <button class="filter-button" data-category="furniture">
+                Furniture
+            </button>
+
+            <button class="filter-button" data-category="groceries">
+                Groceries
+            </button>
+        </section>
+
+        <section>
+            <h2>Products</h2>
+
+            <p id="loading-message">
+                Loading products...
+            </p>
+
+            <p id="error-message"></p>
+
+            <div id="product-grid" class="product-grid"></div>
+        </section>
+
+        <section class="cart-section">
+
+            <h2>Shopping Cart</h2>
+
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+
+            <div class="cart-total">
+                <strong>Total: $<span id="cart-total">0.00</span></strong>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>JavaScript Online Shop - Week 5 Final Project</p>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
